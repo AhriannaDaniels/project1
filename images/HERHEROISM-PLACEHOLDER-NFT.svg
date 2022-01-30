@@ -9,16 +9,11 @@
 	.st3{font-size:21.29px;}
 </style>
 <rect class="st0" width="300" height="300"/>
-<text transform="matrix(1 0 0 1 97.24 143.62)" class="st1 st2 st3">Pl</text>
-<text transform="matrix(1 0 0 1 115.3 143.62)" class="st1 st2 st3">a</text>
-<text transform="matrix(1 0 0 1 125.47 143.62)" class="st1 st2 st3">ceho</text>
-<text transform="matrix(1 0 0 1 167.81 143.62)" class="st1 st2 st3">ld</text>
-<text transform="matrix(1 0 0 1 184.46 143.62)" class="st1 st2 st3">er</text>
-<text transform="matrix(1 0 0 1 83.76 169.17)" class="st1 st2 st3">f</text>
-<text transform="matrix(1 0 0 1 90.11 169.17)" class="st1 st2 st3">o</text>
-<text transform="matrix(1 0 0 1 102.33 169.17)" class="st1 st2 st3">r a gr</text>
-<text transform="matrix(1 0 0 1 147.13 169.17)" class="st1 st2 st3">e</text>
-<text transform="matrix(1 0 0 1 157.91 169.17)" class="st1 st2 st3">at N</text>
-<text transform="matrix(1 0 0 1 192.8 169.17)" class="st1 st2 st3">F</text>
-<text transform="matrix(1 0 0 1 204.07 169.17)" class="st1 st2 st3">T</text>
+<g>
+	<text transform="matrix(1 0 0 1 97.2351 156.2377)" class="st1 st2 st3">Pl</text>
+	<text transform="matrix(1 0 0 1 115.2951 156.2377)" class="st1 st2 st3">a</text>
+	<text transform="matrix(1 0 0 1 125.4651 156.2377)" class="st1 st2 st3">ceho</text>
+	<text transform="matrix(1 0 0 1 167.8051 156.2377)" class="st1 st2 st3">ld</text>
+	<text transform="matrix(1 0 0 1 184.4551 156.2377)" class="st1 st2 st3">er</text>
+</g>
 </svg>

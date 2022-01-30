@@ -29,6 +29,8 @@ var menuItemThree = document.getElementById("MI3");
 var menuItemThreeText = document.getElementById("itemThree");
 
 
+
+
 menuicon.addEventListener("click", function(e){
     if(menuState == false){
         document.getElementById('navbar-ul').style.height = "100vh;"
@@ -58,7 +60,24 @@ menuicon.addEventListener("click", function(e){
         menuState = true;
     } else if( menuState == true){
 
-        document.getElementById('bar-one').classList.remove("menuTopX");
+        collaspeMenu()
+    }
+
+});
+
+function delay (URL) {
+    collaspeMenu()
+
+    setTimeout( function() { 
+        document.getElementById('body').classList.remove('animate__fadeIn');
+        document.getElementById('body').classList.add('animate__fadeOut');
+
+    }, 1500);
+    setTimeout( function() { window.location = URL }, 2000 );
+}
+
+function collaspeMenu() {
+    document.getElementById('bar-one').classList.remove("menuTopX");
         document.getElementById('bar-one').classList.add("menuTopL");
 
          // Middle Bar Bar
@@ -74,14 +93,26 @@ menuicon.addEventListener("click", function(e){
         document.getElementById("itemOne").style.right = "200%";
         setTimeout(function() {
             menuItemOne.style.right = "200%";
-            menuItemOne.style.opacity = "0";
+            setTimeout(function() {
+                menuItemOne.style.opacity = "0";
+            }, 200);
         }, 400)
         
         setTimeout(function() { menuItemTwoText.style.right = "200%"; }, 400)
-        setTimeout(function() { menuItemTwo.style.right = "200%"; menuItemTwo.style.opacity = "0";}, 600);
+        setTimeout(function() { 
+            menuItemTwo.style.right = "200%"; 
+            setTimeout(function() {
+                menuItemTwo.style.opacity = "0";
+            }, 200);
+        }, 600);
 
         setTimeout(function() { menuItemThreeText.style.right = "200%"; }, 600)
-        setTimeout(function() { menuItemThree.style.right = "200%"; menuItemThree.style.opacity = "0";}, 800);
+        setTimeout(function() { 
+            menuItemThree.style.right = "200%"; 
+            setTimeout(function() {
+                menuItemThree.style.opacity = "0";
+            }, 100)
+        }, 800);
 
         setTimeout(function() {
             // Reset Everything
@@ -99,10 +130,4 @@ menuicon.addEventListener("click", function(e){
             document.getElementById('navbar-ul').style.height = "0;"
         })
         menuState = false;
-    }
-    
-    // document.getElementById('bar-two').style.animation = "middleBarHide 800ms ease forwards";
-    // document.getElementById('bar-three').style.animation = "bottombarX 500ms ease forwards";
-
-
-});
+}

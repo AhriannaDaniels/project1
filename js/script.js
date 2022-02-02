@@ -29,6 +29,31 @@ var menuItemThree = document.getElementById("MI3");
 var menuItemThreeText = document.getElementById("itemThree");
 
 
+var starContainer = document.getElementById('star-container');
+var bigStarContainer = document.getElementById('bigger-star-container');
+
+for(i=1; i<101;i++){
+    var xAxis = Math.floor(Math.random() * 100) + 1 + '%';
+    var yAxis = "-" + Math.floor(Math.random() * 100) + 1 + '%';
+    var element = document.createElement("div")
+    element.classList.add('star');
+
+    element.style.left = xAxis;
+    element.style.bottom = yAxis;
+    starContainer.appendChild(element)
+}
+
+for(i=1; i<51;i++){
+    var xAxis = Math.floor(Math.random() * 100) + 1 + '%';
+    var yAxis = "-" + Math.floor(Math.random() * 100) + 1 + '%';
+    var element = document.createElement("div")
+    element.classList.add('bigstar');
+
+    element.style.left = xAxis;
+    element.style.bottom = yAxis;
+    bigStarContainer.appendChild(element)
+}
+
 
 
 menuicon.addEventListener("click", function(e){

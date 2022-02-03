@@ -1,19 +1,3 @@
-
-
-// Homepage carousel for NFTs
-
-
-// function nxtCarouselCard() {
-//     carouselNFTs[nftCarouselIndex].classList.remove('ActiveCarouselCard');
-//     nftCarouselIndex++
-//     carouselNFTs[nftCarouselIndex].classList.add('animate__fadeOutLeft');
-// }
-
-// function carousel() {
-//     carouselNFTs[nftCarouselIndex].classList.add('animate__fadeOutLeft');
-//     setTimeout(nxtCarouselCard, 1000)
-// }
-
 var menuicon = document.getElementById('menu-icon');
 var menuState = false;
 // HerHeroism Menu Item
@@ -32,29 +16,58 @@ var menuItemThreeText = document.getElementById("itemThree");
 var starContainer = document.getElementById('star-container');
 var bigStarContainer = document.getElementById('bigger-star-container');
 
-for(i=1; i<101;i++){
-    var xAxis = Math.floor(Math.random() * 100) + 1 + '%';
-    var yAxis = "-" + Math.floor(Math.random() * 100) + 1 + '%';
-    var element = document.createElement("div")
-    element.classList.add('star');
 
-    element.style.left = xAxis;
-    element.style.bottom = yAxis;
-    starContainer.appendChild(element)
+var i = 0; 
+var x = 0;
+function animateStars() {
+    setTimeout(function() {
+        if( i < 101){
+            var xAxis = Math.floor(Math.random() * 100) + 1 + '%';
+            var yAxis = "-" + Math.floor(Math.random() * 100) + 1 + '%';
+            var element = document.createElement("div")
+            element.classList.add('star');
+
+            element.style.left = xAxis;
+            element.style.bottom = yAxis;
+            starContainer.appendChild(element)
+
+            staryNight(element, "star")
+            i++
+            animateStars();
+        }
+    },500);
+
+    setTimeout(function() {
+        if( x < 26){
+            var xAxis = Math.floor(Math.random() * 100) + 1 + '%';
+            var yAxis = "-" + Math.floor(Math.random() * 100) + 1 + '%';
+            var element = document.createElement("div")
+            element.classList.add('bigstar');
+
+            element.style.left = xAxis;
+            element.style.bottom = yAxis;
+            bigStarContainer.appendChild(element)
+            staryNight(element, "bigstar")
+
+            x++
+            animateStars();
+        }
+    },700);
+};
+
+
+animateStars();
+
+function staryNight(element, starType) {
+    setTimeout(function() {
+            if(starType == "star") {
+                element.style.animation = "starAnimate 90000ms infinite"
+            }
+            else {
+                element.style.animation = "starAnimate 50000ms infinite"
+            }
+    },400);
 }
-
-for(i=1; i<51;i++){
-    var xAxis = Math.floor(Math.random() * 100) + 1 + '%';
-    var yAxis = "-" + Math.floor(Math.random() * 100) + 1 + '%';
-    var element = document.createElement("div")
-    element.classList.add('bigstar');
-
-    element.style.left = xAxis;
-    element.style.bottom = yAxis;
-    bigStarContainer.appendChild(element)
-}
-
-
 
 menuicon.addEventListener("click", function(e){
     if(menuState == false){
@@ -156,3 +169,29 @@ function collaspeMenu() {
         })
         menuState = false;
 }
+
+// for(i=1; i<101;i++){
+//     var xAxis = Math.floor(Math.random() * 100) + 1 + '%';
+//     var yAxis = "-" + Math.floor(Math.random() * 100) + 1 + '%';
+//     var element = document.createElement("div")
+//     element.classList.add('star');
+
+//     element.style.left = xAxis;
+//     element.style.bottom = yAxis;
+//     starContainer.appendChild(element)
+    
+//     staryNight(element, "star")
+// }
+
+
+// for(i=1; i<51;i++){
+//     var xAxis = Math.floor(Math.random() * 100) + 1 + '%';
+//     var yAxis = "-" + Math.floor(Math.random() * 100) + 1 + '%';
+//     var element = document.createElement("div")
+//     element.classList.add('bigstar');
+
+//     element.style.left = xAxis;
+//     element.style.bottom = yAxis;
+//     bigStarContainer.appendChild(element)
+//     staryNight(element, "star")
+// }

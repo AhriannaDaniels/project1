@@ -6,21 +6,19 @@ body {
     font-weight: 400;
     font-style: normal;
     font-family: new-order, sans-serif;
-    background-color: #370063;
+    /* background-color: #370063; */
 }
-
 @keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 /* Discord Button Animation for Icon */
 @keyframes socialump {
     0% {
@@ -107,9 +105,13 @@ font-style: italic;
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 599px)  {
+    
     body {
         margin: 0;
         padding: 0;
+        background: linear-gradient(-45deg, #6D00C7, #4800C6, #F51AA4, #1671AA);
+        background-size: 400% 400%;
+        animation: gradient 10s ease infinite;
     }
     
 
@@ -399,85 +401,92 @@ font-style: italic;
     /* Site Content */
     #star-container, #bigger-star-container {
         width: 100vw;
-        height: 100vh;
+        height: 90vh;
         position: absolute;
-        top: 0;
+        bottom: 10vh;
         left: 0;
         overflow: hidden;
     }
+    #bigger-star-container  {
+        z-index: 0;
+    }
     .star, .bigstar {
-        width: 3px;
-        height: 3px;
+        width: 2px;
+        height: 2px;
         background-color: white;
         border-radius: 50%;
         position: absolute;
         opacity: 1;
         box-shadow: 0 0 5px 1px white;
-        animation: starAnimate 70000ms infinite;
+        animation-timing-function:linear;
+        animation-delay: 500ms;
     }
     .bigstar {
         width: 5px;
         height: 5px;
-        animation: starAnimate 90000ms infinite;
+        animation-delay: 500ms;
     }
     @keyframes starAnimate {
         0% { 
             opacity: 0;
         }
         50% {
-            opacity: .6;
+            opacity: .8;
         }
         100% {
-            bottom:200vh;
             opacity: 0;
+            bottom: 105vh;
         }
     }
 
     .hp-title {
         font-family: fino-sans,sans-serif;
-        background: linear-gradient(-45deg, #390099, #1982C4, #F51AA4, #910AFF);
+        /* background: linear-gradient(-45deg, #390099, #1982C4, #F51AA4, #910AFF);
         text-fill-color: transparent;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
         background-size: 400% 400%;
-        animation: gradient 5s ease infinite;
+        animation: gradient 5s ease infinite; */
         font-size: 6em;
-        text-align: center;
+        text-align: left;
         margin: 0;
         margin-top: 25vh;
         font-weight: 700;
         font-style: normal;
+        opacity: 0;
         animation: hp-title-slide 1200ms ease forwards;
     }
 
     @keyframes hp-title-slide {
         0% {
-            margin-left: -100px;
+            margin-top: 27vh;
         }
         100% {
-            margin-left: 0;
+            margin-top: 25vh;
+            opacity: 1;
         }
     }
 
 
     .hp-subtitle {
         color: #FDFFFC;
-        font-size: 1.3em;
+        font-size: 1.4em;
         font-weight: 100;
         font-weight: 400;
         margin: 10px 0 25vh;
         font-family: new-order, sans-serif;
         font-weight: 400;
         font-style: normal;
-        text-align: center;
+        text-align: left;
+        animation-delay: 1000ms;
     }
     .hp-entro-container {
         width: 100%;
         height: auto;
         padding: 10px;
         box-sizing: border-box;
-        background-color: #910AFF;
+        background-color: #41032A;
         border-radius: 5px;
     }
     .hp-entro {

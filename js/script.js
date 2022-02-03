@@ -107,10 +107,9 @@ function delay (URL) {
     collaspeMenu()
 
     setTimeout( function() { 
-        document.getElementById('body').classList.remove('animate__fadeIn');
-        document.getElementById('body').classList.add('animate__fadeOut');
+        document.getElementById('content').style.animation = "slideFadeOut 1500ms forwards"
 
-    }, 1500);
+    }, 1000);
     setTimeout( function() { window.location = URL }, 2000 );
 }
 

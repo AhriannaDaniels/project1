@@ -406,6 +406,17 @@ body {
         position: fixed;
         top: 30px;
     }
+    #countdown { 
+        padding: 10px;
+        position: absolute;
+        left: 20px;
+        top: 10px;
+        width: 130px;
+        border-radius: 5px;
+        color: #5B00A6;
+        font-weight: bold;
+        background: white;
+    }
     .menu-icon {
         width: 50px;
         height: 40px;
@@ -575,10 +586,10 @@ body {
     }
     .hp-opensea {
         position: relative;
-        margin-bottom: 25vh;
         padding: 10px 0;
         font-weight: bold;
         font-size: 1.2em;
+        margin-bottom: 22vh;
     }
     .hp-opensea img {
         height: 30px;
@@ -586,6 +597,7 @@ body {
         top: 4px;
         margin-left: 10px;
     }
+    
     
     /* NFT CAROUSEL CONTAINER */
     .special-content, .social-media {
@@ -639,7 +651,7 @@ body {
     /* ---------- CONTACT ---------- */
     /* ---------- CONTACT ---------- */
     .contact-container {
-        margin-top: 150px;
+        margin-top: 1500px;
     }
     .input-fields, .textarea, .submit-bttn {
         width: 95%;
@@ -794,6 +806,17 @@ body {
         z-index: +1;
         position: fixed;
         top: 30px;
+    }
+    #countdown { 
+        padding: 10px;
+        position: absolute;
+        left: 20px;
+        top: 10px;
+        width: 130px;
+        border-radius: 5px;
+        color: #5B00A6;
+        font-weight: bold;
+        background: white;
     }
     .menu-icon {
         width: 50px;
@@ -1175,7 +1198,8 @@ body {
         width: 100%;
         height: auto;
         /* min-height: 100vh; */
-        padding: 0 0;
+        padding: 0 50px;
+        box-sizing: border-box;
         animation: slideFadeIn 1500ms forwards;
         overflow-x: hidden;
     }
@@ -1218,6 +1242,17 @@ body {
         z-index: +1;
         position: relative;
         margin: 0 auto;
+    }
+    #countdown { 
+        padding: 10px;
+        position: absolute;
+        left: 50px;
+        top: 10px;
+        width: 130px;
+        border-radius: 5px;
+        color: #5B00A6;
+        font-weight: bold;
+        background: white;
     }
     .menu-icon {
         display: none;

@@ -303,6 +303,16 @@ body {
         margin: 0;
     }
 }
+@keyframes slideFadeInRight {
+    0% { 
+        opacity: 0;
+        margin-right: -100%;
+    }
+    100% { 
+        opacity: 1;
+        margin: 0;
+    }
+}
 @keyframes slideFadeOut {
     0% { 
         opacity: 1;
@@ -351,6 +361,13 @@ body {
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 599px)  {
+    .main-container {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 600px;
+        position: relative;
+        overflow-x: hidden;
+    }
     .content-container {
         position: relative;
         width: 90vw;
@@ -367,14 +384,17 @@ body {
         position: absolute;
         top: 10vh;
         background-size: 100% 100%;
-        background-position: 200px 0;
+        background-position: 800px 0;
         opacity: .5;
         animation: heroImageSlide 35000ms ease forwards;
         animation-delay: 1s;
         z-index: -1;
     }
     @keyframes heroImageSlide {
-        0% { background-position: 200px 0; }
+        0% { 
+            background-position: 800px 0; 
+        }
+        5% { background-position: 200px 0; }
         100% { background-position: 170px 0; }
     }
     /* NAVIGATION BAR */
@@ -466,7 +486,7 @@ body {
         width: 100vw;
         height: 90vh;
         position: absolute;
-        bottom: 10vh;
+        top: 10vh;
         left: 0;
         overflow: hidden;
     }
@@ -558,7 +578,7 @@ body {
         margin-bottom: 25vh;
         padding: 10px 0;
         font-weight: bold;
-        font-size: 1em;
+        font-size: 1.2em;
     }
     .hp-opensea img {
         height: 30px;
@@ -752,15 +772,18 @@ body {
         background-image: url('../images/HERO-placeholder.svg');
         background-repeat: no-repeat;
         position: absolute;
-        top: 10vh;
+        top: 15vh;
         background-size: 80% 80%;
-        background-position: 300px 0;
+        background-position: 1000px 0;
         opacity: .5;
         animation: heroImageSlide 35000ms ease forwards;
         animation-delay: 1s;
     }
     @keyframes heroImageSlide {
-        0% { background-position: 300px 0 }
+        0% { 
+            background-position: 1000px 0; 
+        }
+        5% { background-position: 300px 0; }
         100% { background-position: 270px 0; }
     }
     /* NAVIGATION BAR */
@@ -852,7 +875,7 @@ body {
         width: 100vw;
         height: 90vh;
         position: absolute;
-        bottom: 10vh;
+        top: 0;
         left: 0;
         overflow: hidden;
     }
@@ -1165,7 +1188,7 @@ body {
         position: absolute;
         top: 10vh;
         background-size: 500px 500px;
-        background-position: 700px 0;
+        background-position: 1200px 0;
         opacity: .5;
         animation: heroImageSlide 30000ms ease forwards;
         animation-timing-function: linear;
@@ -1173,8 +1196,18 @@ body {
         z-index: -1;
     }
     @keyframes heroImageSlide {
-        0% { background-position: 700px 0 }
-        100% { background-position: 650px 0; }
+        0% { 
+            background-position: 1000px 0; 
+            opacity: 0;
+        }
+        4.5% { 
+            opacity: .1; 
+        }
+        5% { 
+            background-position: 700px 0; 
+            opacity: .5; 
+        }
+        100% { background-position: 680px 0; }
     }
     /* NAVIGATION BAR */
     .navbar {
@@ -1238,7 +1271,7 @@ body {
         width: 100vw;
         height: 90vh;
         position: absolute;
-        bottom: 20vh;
+        top: 10vh;
         left: 0;
         overflow: hidden;
     }

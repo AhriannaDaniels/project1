@@ -558,7 +558,7 @@ body {
         margin-bottom: 25vh;
         padding: 10px 0;
         font-weight: bold;
-        font-size: 1.2em;
+        font-size: 1em;
     }
     .hp-opensea img {
         height: 30px;
@@ -686,8 +686,7 @@ body {
     }
     .discord-link:hover {
         cursor: pointer;
-        background: linear-gradient(-45deg,  #6F85D5, #6F85D5, #0E0026, #0E0026);
-        text-fill-color: transparent;
+        background: linear-gradient(-45deg,  #6F85D5, #6F85D5, transparent, transparent);
         background-clip: text;
         background-size: 400% 400%;
         animation: gradient 800ms ease-in;
@@ -700,8 +699,7 @@ body {
     }
     .IG-link:hover {
         cursor: pointer;
-        background: linear-gradient(-45deg,  #405DE6, #ED1F24, #0E0026, #0E0026);
-        text-fill-color: transparent;
+        background: linear-gradient(-45deg,  #405DE6, #ED1F24, transparent, transparent);
         background-clip: text;
         background-size: 400% 400%;
         animation: gradient 800ms ease-in;
@@ -715,8 +713,7 @@ body {
     }
     .YT-link:hover {
         cursor: pointer;
-        background: linear-gradient(-45deg,  #ED1F24, #ED1F24, #0E0026, #0E0026);
-        text-fill-color: transparent;
+        background: linear-gradient(-45deg,  #ED1F24, #ED1F24, transparent, transparent);
         background-clip: text;
         background-size: 400% 400%;
         animation: gradient 800ms ease-in;
@@ -729,8 +726,7 @@ body {
     }
     .TW-link:hover {
         cursor: pointer;
-        background: linear-gradient(-45deg,  #1DA1F2, #1DA1F2, #0E0026, #0E0026);
-        text-fill-color: transparent;
+        background: linear-gradient(-45deg,  #1DA1F2, #1DA1F2, transparent, transparent);
         background-clip: text;
         background-size: 400% 400%;
         animation: gradient 800ms ease-in;
@@ -1103,7 +1099,6 @@ body {
     .IG-link:hover {
         cursor: pointer;
         background: linear-gradient(-45deg,  #405DE6, #ED1F24, transparent, transparent);
-        text-fill-color: transparent;
         background-clip: text;
         background-size: 400% 400%;
         animation: gradient 800ms ease-in;
@@ -1118,7 +1113,6 @@ body {
     .YT-link:hover {
         cursor: pointer;
         background: linear-gradient(-45deg,  #ED1F24, #ED1F24, transparent, transparent);
-        text-fill-color: transparent;
         background-clip: text;
         background-size: 400% 400%;
         animation: gradient 800ms ease-in;
@@ -1132,7 +1126,6 @@ body {
     .TW-link:hover {
         cursor: pointer;
         background: linear-gradient(-45deg,  #1DA1F2, #1DA1F2, transparent, transparent);
-        text-fill-color: transparent;
         background-clip: text;
         background-size: 400% 400%;
         animation: gradient 800ms ease-in;
@@ -1225,7 +1218,6 @@ body {
         color:white;
         text-align: center;
         font-size: 1.3em;
-        display: inline-block;
         right: inherit;
         float: left;
         transition: all ease 500ms;
@@ -1501,7 +1493,6 @@ body {
     .IG-link:hover {
         cursor: pointer;
         background: linear-gradient(-45deg,  #405DE6, #ED1F24, transparent, transparent);
-        text-fill-color: transparent;
         background-clip: text;
         background-size: 400% 400%;
         animation: gradient 800ms ease-in;
@@ -1516,7 +1507,6 @@ body {
     .YT-link:hover {
         cursor: pointer;
         background: linear-gradient(-45deg,  #ED1F24, #ED1F24, transparent, transparent);
-        text-fill-color: transparent;
         background-clip: text;
         background-size: 400% 400%;
         animation: gradient 800ms ease-in;
@@ -1530,7 +1520,6 @@ body {
     .TW-link:hover {
         cursor: pointer;
         background: linear-gradient(-45deg,  #1DA1F2, #1DA1F2, transparent, transparent);
-        text-fill-color: transparent;
         background-clip: text;
         background-size: 400% 400%;
         animation: gradient 800ms ease-in;
